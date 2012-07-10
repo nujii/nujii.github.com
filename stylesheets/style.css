@@ -1,8 +1,8 @@
 body {
-	background: url(images/bg_microphone.png) no-repeat center top fixed,
-				url(images/bg_macbook.png) no-repeat center bottom fixed,
-				url(images/bg_table_repeat.png) repeat-x bottom left fixed,
-				url(images/bg_living_room.jpg) no-repeat center center fixed; 
+	background: url(../images/bg_microphone.png) no-repeat center top fixed,
+				url(../images/bg_macbook.png) no-repeat center bottom fixed,
+				url(../images/bg_table_repeat.png) repeat-x bottom left fixed,
+				url(../images/bg_living_room.jpg) no-repeat center center fixed; 
 	-webkit-background-size: 10%, 60%, 14%, cover;
 	-moz-background-size: 10%, 60%, 14%, cover;
 	-o-background-size: 10%, 60%, 14%, cover;
@@ -22,7 +22,7 @@ body {
 
 #nujii_logo {
 	position: relative;
-	background: url(images/nujii_logo.png) no-repeat;
+	background: url(../images/nujii_logo.png) no-repeat;
 	-webkit-background-size: 180px;
 	-moz-background-size: 180px;
 	-o-background-size: 180px;
