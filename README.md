@@ -1,4 +1,4 @@
 nujii.github.com
 ================
 
-Nujii Home Page
+[Nujii Home Page](http://nujii.com)

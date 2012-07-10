@@ -1,0 +1,73 @@
+body {
+	background: url(images/bg_microphone.png) no-repeat center top fixed,
+				url(images/bg_macbook.png) no-repeat center bottom fixed,
+				url(images/bg_table_repeat.png) repeat-x bottom left fixed,
+				url(images/bg_living_room.jpg) no-repeat center center fixed; 
+	-webkit-background-size: 10%, 60%, 14%, cover;
+	-moz-background-size: 10%, 60%, 14%, cover;
+	-o-background-size: 10%, 60%, 14%, cover;
+	background-size: 10%, 60%, 14%, cover;
+	
+	font-family: 'Quicksand', sans-serif;
+	color: #666;
+}
+
+#left_content {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	width: 250px;
+	height: 600px;
+}
+
+#nujii_logo {
+	position: relative;
+	background: url(images/nujii_logo.png) no-repeat;
+	-webkit-background-size: 180px;
+	-moz-background-size: 180px;
+	-o-background-size: 180px;
+	background-size: 180px;
+	width: 180px;
+	height: 90px;
+	margin-bottom: 100px;
+}
+
+#top_links {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 270px;
+	height: 20px;
+}
+
+ul {
+	list-style-type: none;
+	list-style-position: outside;
+}
+
+#top_links li {
+	float: left;
+	margin-left: 5px;
+	font-size: 10pt;
+}
+
+#top_links a {
+	color: #333;
+	text-decoration: none;
+}
+
+#top_links a:hover {
+	text-decoration: underline;
+}
+
+#download a:hover > img {
+	margin-top: -1px;
+}
+
+#download a:active > img {
+	margin-top: 0px;
+}
+
+#download img {
+	margin-left: -5px;
+}
