@@ -1,0 +1,91 @@
+<!--                              
+                                   88 88  
+                                   "" ""  
+                                  
+ ,dPPYba,  88       88          88 88 88  
+a8"'  `"8a 88       88          88 88 88  
+88      88 88       88 88       88 88 88  
+88      88 "8a,   ,a8" "8a,   ,a8" 88 88  
+88      88  `"YbbdP'    `"YbbdP'   88 88  
+
+-->
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Nujii - Collaborative Music Creation</title>
+  <meta name="description" content="Nujii Studio lets you record, mix, and share your music with your friends in real-time, whenever, wherever. Oh, and if that wasn't juicy enough, it's free.">
+
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Google Web Font - Quicksand -->
+  <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+  
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $("a").click(function() {
+      $('#macbook').animate({
+        right: '-1100px'
+      }, 500, function() {
+      });
+    });
+  });
+  </script>
+  <script src="javascripts/modernizr-2.5.3.min.js"></script>
+
+</head>
+<body>
+  <!--[if lt IE 7]><p class="chromeframe">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+  <div id="macbook"><img src="images/macbook.png"/></div>
+  <div id="baseball"><img src="images/baseball.png"/></div>
+
+  <div id="nujii_logo"></div>
+  <div id="intro">
+    <h2>Music creation just went social</h2>
+    <p><strong>nujii studio</strong> lets you record, mix, and master your music collaboratively with anyone, anytime, anywhere.</p>
+    <div id="download">
+      <ul>
+        <li><a href="#"><img src="images/download_button.png" style="width: 150px;"/></a></li>
+        <li><p>For Windows, Mac, and Linux</p></li>
+      </ul>
+    </div>
+    <p style="padding-top: 15px; clear: both; font-size: 8pt;">&copy; 2012 Nujii Labs</p>
+  </div>
+  <div id="social_media">
+    <ul>
+      <li><a href="#"><img src="images/facebook.png"/></a></li>
+      <li><a href="#"><img src="images/twitter.png"/></a></li>
+      <li><a href="#"><img src="images/instagram.png"/></a></li>
+    </ul>
+  </div>
+  <div id="top_links">
+    <ul>
+      <li><a href="#">about</a></li>
+      <li><a href="http://nujii.github.com/investor-slides" target="_blank">investors</a></li>
+      <li><a href="#">jobs</a></li>
+      <li><a target="_blank" href="http://youtu.be/qeuL5IGimCQ">bunny</a></li>
+    </ul>
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="javascripts/jquery-1.7.2.min.js"><\/script>')</script>
+
+  <script src="javascripts/main.js"></script>
+
+  <script>
+  var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+</body>
+</html>

@@ -1,4 +1,3 @@
-nujii.github.com
-================
+# Nujii Studio Information Site
 
-[Nujii Home Page](http://nujii.com)
+This is made with jekyll.

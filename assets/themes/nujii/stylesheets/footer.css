@@ -1,0 +1,40 @@
+
+footer {
+  margin-bottom: 10px;
+}
+
+footer .social-media {
+  float: left;
+}
+
+footer .social-media ul {
+  list-style-type: none;
+  list-style-position: outside;
+  margin: 0px;
+  padding: 0px;
+}
+
+footer .social-media li {
+  float: left;
+  margin: 0 10px 0 0;
+  padding: 0px;
+}
+
+footer .social-media img {
+  opacity: 0.2;
+  filter:Alpha(opacity=20);
+  
+  transition: opacity .5s;
+  -moz-transition: opacity .5s; /* Firefox 4 */
+  -webkit-transition: opacity .5s; /* Safari and Chrome */
+  -o-transition: opacity .5s; /* Opera */
+}
+
+footer .social-media img:hover {
+  opacity: 1;
+  filter:Alpha(opacity=100);
+}
+
+footer .copyright {
+  float: right;
+}

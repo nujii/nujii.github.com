@@ -1,0 +1,36 @@
+.navbar {
+  margin-top: 30px;
+}
+
+.navbar-inner {
+  background: none;
+  box-shadow: none;
+}
+
+.navbar .brand {
+  background: url(../images/nujii_logo.png) no-repeat;
+  -webkit-background-size: 180px;
+  -moz-background-size: 180px;
+  -o-background-size: 180px;
+  background-size: 180px;
+  width: 180px;
+  height: 85px;
+  font-size: 0 !important;
+  padding: 0;
+}
+
+.navbar a {
+  text-transform: lowercase;
+  text-shadow: none !important;
+  transition: color .35s;
+  -moz-transition: color .35s; /* Firefox 4 */
+  -webkit-transition: color .35s; /* Safari and Chrome */
+  -o-transition: color .35s; /* Opera */
+}
+.navbar a:hover {
+  color: #222 !important;
+}
+.navbar .active a {
+  background-color: #DBDBDB !important;
+  border-radius: 3px;
+}
