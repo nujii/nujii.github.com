@@ -16,10 +16,6 @@ body {
   font-weight: normal;
   line-height: 30px;
   color: #064E8E;
-  
-  background: -webkit-gradient(linear, left top, left bottom, from(#095FA8), to(#064A88));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .intro .intro-description {
