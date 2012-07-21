@@ -17,7 +17,7 @@
     }
     else {
       var contentHeight = footerHeight+navBarHeight+introHeight+65;
-      var newHeight = (contentHeight+imageHeight<bodyHeight)?(bodyHeight-contentHeight):(contentHeight-imageHeight);
+      var newHeight = (contentHeight+imageHeight<bodyHeight)?(bodyHeight-contentHeight):(contentHeight-imageHeight-65);
       container.height(newHeight);
     }
   };

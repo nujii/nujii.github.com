@@ -5,8 +5,13 @@ header: Pages
 ---
 {% include JB/setup %}
 
-<h2>All Pages</h2>
-<ul>
-{% assign pages_list = site.pages %}
-{% include JB/pages_list %}
-</ul>
+
+<div class="span9">
+  <div class="page-content">
+    <h2>All Pages</h2>
+    <ul>
+    {% assign pages_list = site.pages %}
+    {% include JB/pages_list %}
+    </ul>
+  </div>
+</div>
