@@ -1,7 +1,23 @@
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: 'Quicksand', sans-serif;
   font-weight: normal;
   color: #444;
+  height: 100%;
+  margin: 0;
+}
+
+.container-fluid {
+  position: relative;
+  min-height: 100%;
+}
+
+.content {
+  margin-bottom: 45px;
 }
 
 @media (min-width: 768px) {
@@ -11,3 +27,23 @@ body {
     padding-left: 50px;
   }
 }
+
+/* content */
+/*@media (min-width: 768px) {
+
+  .content {
+    min-height: 600px;
+  }
+}
+@media (max-width: 768px) and (min-width: 480px) {
+
+  .content {
+    min-height: 400px;
+  }
+}
+@media (max-width: 480px) {
+
+  .content {
+    min-height: 250px;
+  }
+}*/

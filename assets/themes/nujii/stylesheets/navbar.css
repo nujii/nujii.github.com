@@ -34,6 +34,11 @@
   color: #fff !important;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.56);
   -webkit-font-smoothing: antialiased;
+  margin-top: 23px;
+}
+
+.navbar .nav.pull-right {
+  margin-top: 15px;
 }
 
 .navbar a,
@@ -48,6 +53,10 @@
 .navbar a:hover,
 .nav-collapse a:hover {
   color: #222 !important;
+}
+.nav-collapse .nav > li > a:hover,
+.nav-collapse .dropdown-menu a:hover {
+  background-color: white !important;
 }
 .navbar a.active,
 .nav-collapse .dropdown-menu a.active {

@@ -1,16 +1,33 @@
 body {
-  background: url(../images/bg_table_repeat.png) repeat-x bottom left fixed,
-        url(../images/bg_grass.jpg) no-repeat center center fixed; 
-  -webkit-background-size: 14%, cover;
-  -moz-background-size: 14%, cover;
-  -o-background-size: 14%, cover;
-  background-size: 14%, cover;
+  background: url(../images/bg_grass.jpg) no-repeat center center; 
+  
+}
+
+.macbook {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+.macbook-container {
+  position: relative;
+  bottom: 0;
+  right: 0;
 }
 
 .macbook img {
   width: 100%;
 }
-
+/*
+.table {
+  background: url(../images/bg_table_repeat.png) repeat-x bottom left fixed;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
+*/
 .tagline {
   font-size: 2.3em;
   font-weight: normal;
@@ -50,10 +67,15 @@ body {
   border: 3px solid;
 }
 
-
 @media (min-width: 768px) {
 
   .intro {
     margin-top: 40px;
+  }
+}
+@media (max-width: 768px) {
+
+  .macbook-container {
+    width: 100% !important;
   }
 }

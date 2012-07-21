@@ -1,10 +1,17 @@
 
 footer {
   margin-bottom: 10px;
+  bottom: 0;
+  position: absolute;
+  height: 40px;
+  width: 93%;
 }
 
 footer .social-media {
-  float: left;
+  position: absolute;
+  left: 10px;
+  width: 150px;
+  height: 40px;
 }
 
 footer .social-media ul {
@@ -36,5 +43,8 @@ footer .social-media img:hover {
 }
 
 footer .copyright {
-  float: right;
+  position: absolute;
+  right: 10px;
+  width: 120px;
+  top: 10px;
 }
