@@ -1,5 +1,10 @@
 body {
-  background: url(../images/bg_grass.jpg) no-repeat center center; 
+    background: url(../images/bg_table_repeat.png) repeat-x bottom left fixed,
+        url(../images/bg_grass.jpg) no-repeat center center fixed; 
+  -webkit-background-size: 14%, cover;
+  -moz-background-size: 14%, cover;
+  -o-background-size: 14%, cover;
+  background-size: 14%, cover;
   
 }
 
