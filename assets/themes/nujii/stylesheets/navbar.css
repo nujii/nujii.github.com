@@ -56,10 +56,13 @@
 }
 .nav-collapse .nav > li > a:hover,
 .nav-collapse .dropdown-menu a:hover {
-  background-color: white !important;
+  background: #EEEEEE !important;
 }
 .navbar a.active,
 .nav-collapse .dropdown-menu a.active {
-  background-color: #005D8A !important;
-  border-radius: 3px;
+  background: #005D8A !important;
+  transition: background .35s;
+  -moz-transition: background .35s; /* Firefox 4 */
+  -webkit-transition: background .35s; /* Safari and Chrome */
+  -o-transition: background .35s; /* Opera */
 }
