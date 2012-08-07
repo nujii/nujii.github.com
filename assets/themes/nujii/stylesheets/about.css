@@ -1,5 +1,9 @@
 body {
     background: url(../images/bg_living_room.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+    background-size: cover;
   
 }
 
@@ -16,29 +20,41 @@ li {
 
 h2 {
 	font-weight: normal;
+	color: #064E8E;
 }
 
-.about-sidebar a {
-	padding: 5px 0 5px 5px;
-	background-color: #bdc66f;
-	width: 100%;
+.nav {
+	margin-bottom: 0px;
+}
 
+.nav-tabs {
+	border-bottom: none;
+	float: right;
+}
+
+.nav-tabs > li {
+	margin-left: 5px;
+}
+
+.nav-tabs > li > a {
 	text-decoration: none;
-	color: #fff;
+	color: #555;
 	font-size: 12pt;
-
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	-webkit-border-radius: 20px;
+	   -moz-border-radius: 20px;
+	   		border-radius: 20px;
+	border: none;
 }
 
-.about-sidebar {
-	width: 15%;
-	float: left;
-	border-right: 1px solid #ddd;
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover {
+	color: #fff;
+	cursor: default;
+	background-color: #849636;
+	border: none;
+	border-bottom-color: transparent;
 }
 
-.about-content {
-	width: 83%;
-	float: left;
-	padding-left: 10px;
+.tab-content {
+	clear: both;
 }
