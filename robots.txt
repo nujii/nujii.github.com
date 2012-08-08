@@ -1,0 +1,5 @@
+User-agent: YottaaMonitor
+Disallow: /
+
+User-Agent: *
+Allow: /

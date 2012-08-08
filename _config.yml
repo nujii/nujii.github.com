@@ -22,7 +22,7 @@ author :
 # such as sitemap.txt 
 # Most places will/should use BASE_PATH to make the urls
 #
-production_url : http://nujii.github.com
+production_url : http://www.nujii.com
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
