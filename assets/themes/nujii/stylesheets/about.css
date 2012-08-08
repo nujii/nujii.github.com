@@ -58,3 +58,28 @@ h2 {
 .tab-content {
 	clear: both;
 }
+
+.about-left-col {
+	width: 49%;
+	border-right: 1px solid #ddd;
+	float: left;
+}
+
+.about-right-col {
+	width: 49%;
+	float: left;
+}
+
+.about-box {
+	padding: 0 18px 10px;
+	margin: 0 0 10px;
+}
+
+.border-bottom {
+	border-bottom: 1px solid #ddd;
+}
+
+.icon {
+	margin-right: 10px;
+	float: left;
+}
