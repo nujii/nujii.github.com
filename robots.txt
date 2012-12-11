@@ -1,5 +1,3 @@
-User-agent: YottaaMonitor
-Disallow: /
+# robotstxt.org/
 
-User-Agent: *
-Allow: /
+User-agent: *
