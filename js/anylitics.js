@@ -126,24 +126,29 @@ function onPlayerStateChange(event) {
   videoarraynum = event.target.id - 1;
   //Should the video rear it's head
   if (event.data ==YT.PlayerState.PLAYING){
-    _gaq.push(['_trackEvent', 'Videos', 'Play', videoArray[videoarraynum] ]); 
+    _gaq.push(['_trackEvent', 'Videos', 'Play', videoArray[videoarraynum] ]);
+    mixpanel.track("Video Play", videoArray[videoarraynum]);
   } 
   //should the video tire out and cease
   if (event.data ==YT.PlayerState.ENDED){
     _gaq.push(['_trackEvent', 'Videos', 'Watch to End', videoArray[videoarraynum] ]); 
+    mixpanel.track("Video Watch To End", videoArray[videoarraynum]);
   } 
   //and should we tell it to halt, cease, heal.
   if (event.data ==YT.PlayerState.PAUSED){
-    _gaq.push(['_trackEvent', 'Videos', 'Pause', videoArray[videoarraynum] ]); 
+    _gaq.push(['_trackEvent', 'Videos', 'Pause', videoArray[videoarraynum] ]);
+    mixpanel.track("Video Pause", videoArray[videoarraynum]);
   }
   //and should the monster think, before it doth play
   //after we command it to move
   if (event.data ==YT.PlayerState.BUFFERING){
-    _gaq.push(['_trackEvent', 'Videos', 'Buffering', videoArray[videoarraynum] ]); 
+    _gaq.push(['_trackEvent', 'Videos', 'Buffering', videoArray[videoarraynum] ]);
+    mixpanel.track("Video Buffering", videoArray[videoarraynum]);
   }
   //and should it cue
   //for why not track this as well.
   if (event.data ==YT.PlayerState.CUED){
     _gaq.push(['_trackEvent', 'Videos', 'Cueing', videoArray[videoarraynum] ]); 
+    mixpanel.track("Video Cueing", videoArray[videoarraynum]);
   } 
 } 
