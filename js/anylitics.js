@@ -13,7 +13,7 @@ var playerArray = new Array();
 
 (function($) {
   mixpanel.track_links(".btn-download", "Click download button");
-  mixpanel.track_forms(".form-signin", "Submit signup form");
+  mixpanel.track_forms("#signup", "Submit signup form");
 
   function trackYouTube()
   {
