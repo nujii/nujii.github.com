@@ -12,6 +12,9 @@ var playerArray = new Array();
 //for the wanderous devil known as the iframe
 
 (function($) {
+  mixpanel.track_links(".btn-download", "Click download button");
+  mixpanel.track_forms(".form-signin", "Submit signup form");
+
   function trackYouTube()
   {
     //What am i, but nothing?
@@ -127,28 +130,28 @@ function onPlayerStateChange(event) {
   //Should the video rear it's head
   if (event.data ==YT.PlayerState.PLAYING){
     _gaq.push(['_trackEvent', 'Videos', 'Play', videoArray[videoarraynum] ]);
-    mixpanel.track("Video Play", videoArray[videoarraynum]);
+    mixpanel.track("Video Play");
   } 
   //should the video tire out and cease
   if (event.data ==YT.PlayerState.ENDED){
     _gaq.push(['_trackEvent', 'Videos', 'Watch to End', videoArray[videoarraynum] ]); 
-    mixpanel.track("Video Watch To End", videoArray[videoarraynum]);
+    mixpanel.track("Video Watch To End");
   } 
   //and should we tell it to halt, cease, heal.
   if (event.data ==YT.PlayerState.PAUSED){
     _gaq.push(['_trackEvent', 'Videos', 'Pause', videoArray[videoarraynum] ]);
-    mixpanel.track("Video Pause", videoArray[videoarraynum]);
+    mixpanel.track("Video Pause");
   }
   //and should the monster think, before it doth play
   //after we command it to move
   if (event.data ==YT.PlayerState.BUFFERING){
     _gaq.push(['_trackEvent', 'Videos', 'Buffering', videoArray[videoarraynum] ]);
-    mixpanel.track("Video Buffering", videoArray[videoarraynum]);
+    mixpanel.track("Video Buffering");
   }
   //and should it cue
   //for why not track this as well.
   if (event.data ==YT.PlayerState.CUED){
     _gaq.push(['_trackEvent', 'Videos', 'Cueing', videoArray[videoarraynum] ]); 
-    mixpanel.track("Video Cueing", videoArray[videoarraynum]);
+    mixpanel.track("Video Cueing");
   } 
 } 
