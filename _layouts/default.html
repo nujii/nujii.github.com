@@ -25,20 +25,11 @@
     <link rel="apple-touch-icon" sizes="114x114" href="img/touch-icon-114.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="img/touch-icon-144.png" />
     <link rel="apple-touch-icon" sizes="144x144" href="img/touch-icon-144.png" />
-
-    <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
-    typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.increment".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-      mixpanel.init("9dbd6867aa93997b9e93e79435b492c9");</script><!-- end Mixpanel -->
   </head>
   <body>
     <!--[if lt IE 7]>
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
-    <!-- ClickTale Top part -->
-    <script type="text/javascript">
-    var WRInitTime=(new Date()).getTime();
-    </script>
-    <!-- ClickTale end of Top part -->
 
     <div id="wrap">
       <div class="container-fluid">
@@ -72,17 +63,21 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
-    <!-- script type="text/javascript" src="js/anylitics.js"></script -->
-    <!-- ClickTale Bottom part -->
-    <div id="ClickTaleDiv" style="display: none;"></div>
+
     <script type="text/javascript">
-    if(document.location.protocol!='https:')
-      document.write(unescape("%3Cscript%20src='http://s.clicktale.net/WRd.js'%20type='text/javascript'%3E%3C/script%3E"));
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-27695442-1']);
+      _gaq.push(['_setDomainName', 'nujii.com']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
     </script>
-    <script type="text/javascript">
-    if(typeof ClickTale=='function') ClickTale(11863,1,"www14");
-    </script>
-    <!-- ClickTale end of Bottom part -->
 
   </body>
 </html>
